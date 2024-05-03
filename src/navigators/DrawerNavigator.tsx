@@ -4,6 +4,7 @@ import Screen01 from '../screens/Screen01';
 import Screen02 from '../screens/Screen02';
 import StackNavigator from './StackNavigator';
 import NativeStackNavigator from './NativeStackNavigator';
+import BottomTabBarNavigator from './BottomTabBarNavigator';
 
 const Drawer = createDrawerNavigator();
 
@@ -14,6 +15,7 @@ const DrawerNavigator = () => {
       <Drawer.Screen name="Screen02" component={Screen02} />
       <Drawer.Screen name="ExampleStack" component={StackNavigator} />
       <Drawer.Screen name="NativeStack" component={NativeStackNavigator} />
+      <Drawer.Screen name="BottomTabBar" component={BottomTabBarNavigator} />
     </Drawer.Navigator>
   );
 };
